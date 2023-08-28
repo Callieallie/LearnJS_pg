@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(194, 227, 238);
+    background-color: rgb(219, 211, 182);
 }
 
 h1 {
@@ -10,7 +10,24 @@ h1 {
     font-size: 50px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
 p {
     font-family: verdana;
     font-size: 20px;
+}
+
+/* Classes */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex-basis: 40%;
 }
