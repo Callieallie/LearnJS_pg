@@ -35,6 +35,8 @@ p {
 .topNavigation {
     display: flex;
     justify-content: center;
+    gap: 2em; /*Gap is an alternative to space-around that will keep "buttons" closer to the center*/
+    /*justify-content: space-around; --This will evenly divide the space by the objects inside*/
     padding-top: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -45,8 +47,14 @@ p {
 }
 
 .topNavigation a {
-    margin-left: 2em;
     font-family: 'Lilita One', cursive;
+}
+
+.headerStyle {
+    font-family: 'Lilita One', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
 }
 
 /* Adjusting href link colors*/
