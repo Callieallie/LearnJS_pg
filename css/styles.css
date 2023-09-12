@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(219, 211, 182);
+    background-color: rgb(175, 175, 175);
 }
 
 h1 {
@@ -31,3 +31,39 @@ p {
 .column {
     flex-basis: 40%;
 }
+
+.topNavigation {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgb(247, 247, 247);
+    color: black;
+    height: 75px;
+    font-size: 2em;
+}
+
+.topNavigation a {
+    margin-left: 2em;
+    font-family: 'Lilita One', cursive;
+}
+
+/* Adjusting href link colors*/
+/*A space between selectors will apply AND functionality
+while a comma between selectors will apply OR functionality*/
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
+}
+
+/* Google Fonts */
+/*font-family: 'Lilita One', cursive;*/
