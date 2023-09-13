@@ -13,6 +13,7 @@ const horse1 = {
     specialties: ["Jumping", "Dressage"]
 }
 
+
 const horse2 = {
     id: 2,
     name: "Juniper",
@@ -32,6 +33,7 @@ const horse3 = {
     stallNumber: 13,
     specialties: ["Jumping"]
 }
+
 
 // -------------------------------------------------------------------
 /*BAD FORM: An way to list keys on an object*/
@@ -61,8 +63,22 @@ horseObjParagraph.innerText = `Horse no. ${horse1.id.toString(10)}: ${horse1.nam
 Riders: ${horse1.riders[0]}, ${horse1.riders[1]}
 Age: ${horse1.age}
 Coat Color: ${horse1.coatColor}
-Stall No.: ${horse1.stallNumber}`;
-//Specialties: ${}
+Stall No: ${horse1.stallNumber}
+Specialties: ${horse1.specialties.join(", ")}
+
+Horse no. ${horse2.id.toString(10)}: ${horse2.name}
+Riders: ${horse2.riders[0]}, ${horse2.riders[1]}
+Age: ${horse2.age}
+Coat Color: ${horse2.coatColor}
+Stall No: ${horse2.stallNumber}
+Specialties: ${horse2.specialties.join(", ")}
+
+Horse no. ${horse3.id.toString(10)}: ${horse3.name}
+Riders: ${horse3.riders[0]}, ${horse3.riders[1]}
+Age: ${horse3.age}
+Coat Color: ${horse3.coatColor}
+Stall No: ${horse3.stallNumber}
+Specialties: ${horse3.specialties.join(", ")}`;
 
 // -------- EXERCISE IDEAS --------
 /*

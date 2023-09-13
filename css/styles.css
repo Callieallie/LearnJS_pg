@@ -10,6 +10,17 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-style:dashed;
+    text-align: center;
+    font-size: 50px;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -22,6 +33,12 @@ p {
     font-size: 20px;
 }
 
+/*IDs*/
+#paragraph1 {
+    display: flex;
+    justify-content: center;
+}
+
 /* Classes */
 .row {
     display: flex;
@@ -30,6 +47,12 @@ p {
 
 .column {
     flex-basis: 40%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .topNavigation {
