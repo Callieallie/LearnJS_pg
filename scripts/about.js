@@ -27,6 +27,36 @@ const horse2 = {
     polo: false
 }
 
+// -------------------------------------------------------------------
+/*BAD FORM: An way to list keys on an object*/
+/*Came up as an example when I had horse specialties listed as bool values all seperately.
+I was trying to create a function which might take a bool value like "dressage: true",
+assess the bool true or falesness, and return the variable name only if the bool were true.*/
+/*When the code runs through a JS optimizer, the variable names are shortened and delerious*/
+
+/*function listSpecialty(horse) {
+    const specialtyNames = [];
+    for(let attr of Object.keys(horse)) {
+        if(typeof horse[attr] === "boolean"){
+            if(horse[attr]) {
+                specialtyNames.push(attr);
+            }
+        }
+    }
+    return specialtyNames;
+}
+
+console.log(listSpecialty(horse1)); // Lists all variables or "keys" within passed object
+*/
+// -------------------------------------------------------------------
+
+const horseObjParagraph = document.getElementById("paragraph1");
+horseObjParagraph.innerText = `Horse no. ${horse1.id.toString(10)}: ${horse1.name}
+Riders: ${horse1.riders[0]}, ${horse1.riders[1]}
+Age: ${horse1.age}
+Coat Color: ${horse1.coatColor}
+Stall No.: ${horse1.stallNumber}`;
+//Specialties: ${}
 
 // -------- EXERCISE IDEAS --------
 /*
