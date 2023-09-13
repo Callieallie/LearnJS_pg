@@ -10,9 +10,7 @@ const horse1 = {
     age: 3,
     coatColor: "black",
     stallNumber: 38,
-    jumping: true,
-    dressage: true,
-    polo: false
+    specialties: ["Jumping", "Dressage"]
 }
 
 const horse2 = {
@@ -22,9 +20,17 @@ const horse2 = {
     age: 4,
     coatColor: "golden",
     stallNumber: 22,
-    jumping: false,
-    dressage: true,
-    polo: false
+    specialties: ["Dressage", "Polo"]
+}
+
+const horse3 = {
+    id: 3,
+    name: "Gertrude",
+    riders: ["Samantha", "Eddie"],
+    age: 2,
+    coatColor: "grey",
+    stallNumber: 13,
+    specialties: ["Jumping"]
 }
 
 // -------------------------------------------------------------------
