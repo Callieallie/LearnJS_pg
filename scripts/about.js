@@ -13,6 +13,8 @@ const horse1 = {
     specialties: ["Jumping", "Dressage"]
 }
 
+horse1.sponsor = "Best Buy";
+
 
 const horse2 = {
     id: 2,
@@ -24,6 +26,8 @@ const horse2 = {
     specialties: ["Dressage", "Polo"]
 }
 
+horse2.sponsor = "Walmart";
+
 const horse3 = {
     id: 3,
     name: "Gertrude",
@@ -33,6 +37,8 @@ const horse3 = {
     stallNumber: 13,
     specialties: ["Jumping"]
 }
+
+horse3.sponsor = "Kellogs";
 
 
 // -------------------------------------------------------------------
@@ -65,6 +71,7 @@ Age: ${horse1.age}
 Coat Color: ${horse1.coatColor}
 Stall No: ${horse1.stallNumber}
 Specialties: ${horse1.specialties.join(", ")}
+Sponsor: ${horse1.sponsor}
 
 Horse no. ${horse2.id.toString(10)}: ${horse2.name}
 Riders: ${horse2.riders[0]}, ${horse2.riders[1]}
@@ -72,13 +79,19 @@ Age: ${horse2.age}
 Coat Color: ${horse2.coatColor}
 Stall No: ${horse2.stallNumber}
 Specialties: ${horse2.specialties.join(", ")}
+Sponsor: ${horse2.sponsor}
 
 Horse no. ${horse3.id.toString(10)}: ${horse3.name}
 Riders: ${horse3.riders[0]}, ${horse3.riders[1]}
 Age: ${horse3.age}
 Coat Color: ${horse3.coatColor}
 Stall No: ${horse3.stallNumber}
-Specialties: ${horse3.specialties.join(", ")}`;
+Specialties: ${horse3.specialties.join(", ")}
+Sponsor: ${horse3.sponsor}`;
+
+// -------- Default Parameters (Precurser to Arrow Functions)--------
+
+
 
 // -------- EXERCISE IDEAS --------
 /*
