@@ -90,8 +90,13 @@ Specialties: ${horse3.specialties.join(", ")}
 Sponsor: ${horse3.sponsor}`;
 
 // -------- Default Parameters (Precurser to Arrow Functions)--------
+function subtractOne(num) {
+    return num - 1;
+}
 
-
+const experimentParagraph = document.getElementById("paragraph2");
+experimentParagraph.innerText = `subtractOne returns ${subtractOne(5)} when passed the number five as a parameter.
+subtractOne returns ${subtractOne()} when passed nothing.`;
 
 // -------- EXERCISE IDEAS --------
 /*
