@@ -90,13 +90,43 @@ Specialties: ${horse3.specialties.join(", ")}
 Sponsor: ${horse3.sponsor}`;
 
 // -------- Default Parameters (Precurser to Arrow Functions)--------
-function subtractOne(num) {
+function subtractOne(num = 0) {
     return num - 1;
 }
 
 const experimentParagraph = document.getElementById("paragraph2");
 experimentParagraph.innerText = `subtractOne returns ${subtractOne(5)} when passed the number five as a parameter.
 subtractOne returns ${subtractOne()} when passed nothing.`;
+
+// -------- Arrow Functions (Lambdas, Callbacks, Anonymous Functions) --------
+// shorter to write, uses lexical scope, and can benefit from implicit return
+function doMyLaundry(noShirts = 0, noPants = 0) {
+    return `I have washed and folded ${noShirts} shirts and ${noPants} pants. :)`;
+}
+
+// You can write a function by defining a variable and assigning it to an anonymous function
+/*
+const preparedBurger = function(ingredients = ["cheese", "ketchup"]) {
+    return `Here is your burger with ${ingredients.join(", ")}. Enjoy!`;
+}
+*/
+// Notice: the "function" keyword is removed 
+// ... and "=>" is typed between the anonymous function's parameters and "{"
+const preparedBurger = (ingredients = ["cheese", "ketchup"]) => {
+    return `Here is your burger with ${ingredients.join(", ")}. Enjoy!`;
+}
+
+function doItThenLogIt(func) {
+    func();
+    console.log(func);
+}
+
+doItThenLogIt(preparedBurger);
+doItThenLogIt(doMyLaundry);
+
+const lambdaParagraph = document.getElementById("paragraph3");
+lambdaParagraph.innerText = `${doMyLaundry(5, 2)}
+${preparedBurger(["cheese", "ketchup", "mustard", "tomato", "lettuce", "pickle"])}`;
 
 // -------- EXERCISE IDEAS --------
 /*

@@ -49,7 +49,7 @@ p {
 }
 
 /*IDs*/
-#paragraph1, #paragraph2 {
+#paragraph1, #paragraph2, #paragraph3 {
     display: flex;
     justify-content: center;
 }
