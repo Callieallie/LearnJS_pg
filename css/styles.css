@@ -1,6 +1,8 @@
 body {
     background-color: rgb(175, 175, 175);
     height: 5000px;
+    width: 100%;
+    margin-left: 0px;
 }
 
 h1 {
@@ -50,14 +52,22 @@ img {
 p {
     font-family: verdana;
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border-width: 5px;
+    width: 40%;
 }
 
 /*IDs*/
 #paragraph1, #paragraph2, #paragraph3 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
+
 
 /* Classes */
 .row {
@@ -80,12 +90,13 @@ p {
     justify-content: center;
     gap: 2em; /*Gap is an alternative to space-around that will keep "buttons" closer to the center*/
     /*justify-content: space-around; --This will evenly divide the space by the objects inside*/
-    padding-top: 1em;
+    padding-top: 0.5em;
     margin-top: 1em;
     margin-bottom: 1em;
     background-color: rgb(247, 247, 247);
     color: black;
-    height: 75px;
+    height: 50px;
+    width: 100%;
     font-size: 2em;
 }
 
@@ -106,6 +117,21 @@ p {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+}
+
+/*It is better to make bold or italicized portions of text seperate paragraphs than to
+use .innerHTML to insert <b> tags and such because .innerHTML is vulnerable to being 
+"JavaScript Injection". Someone could change the DOM and run unwanted HTML scripts.
+This could lead to security issues when handling sensitive information.*/
+.boldParagraph {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.miniBorder {
+    width: 30%;
 }
 
 /*Dropdown Navigation Pseudoclass*/
