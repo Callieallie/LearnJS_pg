@@ -8,15 +8,19 @@ h1 {
     color: rgb(0, 0, 0);
     border-style:dashed;
     text-align: center;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 h2 {
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     color: black;
-    width: 50%;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    border-radius: 12px;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border-style:dashed;
     text-align: center;
     font-size: 50px;
@@ -29,11 +33,11 @@ h3 {
     An alternative way to achieve the same look is to use the text-shadow property*/
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
-    font-size: 50px;
 }
 
 img {
@@ -46,6 +50,7 @@ img {
 p {
     font-family: verdana;
     font-size: 20px;
+    margin-bottom: 0px;
 }
 
 /*IDs*/
@@ -112,7 +117,7 @@ p {
     font-family: 'Lilita One', cursive;
     display: flex;
     justify-content: center;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 /*Pseudo Classes and Pseudo Elements*/

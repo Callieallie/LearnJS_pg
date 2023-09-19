@@ -17,3 +17,4 @@ paintColors.forEach((color, index) => {
 
 const paintParagraph = document.getElementById("paragraph1");
 paintParagraph.innerText = `We have the following paintings: \n${paintings.join("\n")}`;
+
