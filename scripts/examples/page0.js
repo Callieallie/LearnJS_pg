@@ -40,3 +40,9 @@ boldGradesParagraph.innerText = `Here are some grades:`;
 const gradesParagraph = document.getElementById("paragraph2");
 gradesParagraph.innerText = `${studentGrades.join(", ")}
 The average grade among those listed is ${averageGrade(studentGrades)}`; 
+
+
+/* -------- Exercise Ideas --------
+- Cumulative/Running Average Algorithm 
+- 
+*/
