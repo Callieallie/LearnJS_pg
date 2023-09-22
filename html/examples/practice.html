@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> <!--Specifies the HTML version for the browser. DO NOT FORGET-->
+<!--The html element has two children: head and body-->
+<html lang="en"> <!--The language attribute defaults to unknown-->
+<head> <!--Contents of the head are NOT VISABLE on the page-->
+    <!--Meta tags contain metadata about the webpage-->
+    <!--Meta elements cannot have children (empty element), so they do not have closing tags-->
+    <meta charset="UTF-8"> <!--IMPORTANT helps avoid some delerium-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes the webpage look nice on any screen (mobile)-->
+    <meta name="author" content="Callieallie">
+    <meta name="description" content="Practice webpage for HTML and CSS">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-<title>Callieallie's Website</title>
+    <title>HTML Practice Page - Callieallie's Website</title> <!--Displayed when searched for in Google-->
 </head>
 <body>
     <header>Callieallie's Website</header> <!--Website Name-->
@@ -24,38 +31,39 @@
         </div>
     </div>
 
-    <!--For the time being, I will only have one column of text on this page-->
-    <!--I would like to section out exercises with nice titles before each topic is covered-->
-    <!--FUTURE FEATURE-->
-    <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
-    <!-- -- To do this, I will add a div one layer above the center div below. -- -->
-    <!-- -- This div will be formatted similarly to the navigation bar. -- -->
-    <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
-    <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
-    <div class="center">
-        <h1 class="headerStyle">HTML Practice Page</h1> <!--Page Topic-->
-        <h2>Headers</h2> <!--Sub-topic-->
-        <div class="centerDividerContents">
-            <ol class="listRomanNumerals">
-                <li>This is the precedance an h1 element should have. There can only be one h1 per page.</li>
-                <ol class="listUpperAlphabet">
-                    <li>An h2 element should be a more narrowed topic pertaining to the h1.</li>
-                    <li>You can have as many h2-h6 elements as you would like.</li>
-                    <ol>
-                        <li>h3 elements are intended for sub-topics of h2 elements.</li>
-                        <li>Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter.</li>
-                        <ol class="listLowerAlphabet">
-                            <li>If h3 elements have sub-sections, implement them with h4 elements.</li>
+    <main>
+        <!--For the time being, I will only have one column of text on this page-->
+        <!--I would like to section out exercises with nice titles before each topic is covered-->
+        <!--FUTURE FEATURE-->
+        <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
+        <!-- -- To do this, I will add a div one layer above the center div below. -- -->
+        <!-- -- This div will be formatted similarly to the navigation bar. -- -->
+        <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
+        <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
+        <div class="center">
+            <h1 class="headerStyle">HTML Practice Page</h1> <!--Page Topic-->
+            <h2>Headers</h2> <!--Sub-topic-->
+            <div class="centerDividerContents">
+                <ol class="listRomanNumerals">
+                    <li>This is the precedance an h1 element should have. There can only be one h1 per page.</li>
+                    <ol class="listUpperAlphabet">
+                        <li>An h2 element should be a more narrowed topic pertaining to the h1.</li>
+                        <li>You can have as many h2-h6 elements as you would like.</li>
+                        <ol>
+                            <li>h3 elements are intended for sub-topics of h2 elements.</li>
+                            <li>Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter.</li>
+                            <ol class="listLowerAlphabet">
+                                <li>If h3 elements have sub-sections, implement them with h4 elements.</li>
+                            </ol>
                         </ol>
                     </ol>
                 </ol>
-            </ol>
+            </div>
+            <h2>Section_2</h2> <!--Sub-topic-->
         </div>
-        <h2>Section_2</h2> <!--Sub-topic-->
-    </div>
 
-    <img src="/images/dividers/divider9.png" alt="text divider">
-    
+        <img src="/images/dividers/divider9.png" alt="text divider">
+    </main>
     <script src="/scripts/examples/practice.js"></script>
 </body>
 </html>
@@ -84,5 +92,5 @@
     - emmet: a plugin used to assist in writing HTML quickly. Already installed with VS Code
     - Meaningful headings are important especially for screen readers and for SEO
     - Axe is the name of a popular accessability testing tool
-    - 
+    - Boilerplate: "!"+tab will create a basic HTML template
 -->
