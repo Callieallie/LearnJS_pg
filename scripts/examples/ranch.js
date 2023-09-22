@@ -64,7 +64,7 @@ console.log(listSpecialty(horse1)); // Lists all variables or "keys" within pass
 */
 // -------------------------------------------------------------------
 
-const horseObjParagraph = document.getElementById("paragraph1");
+const horseObjParagraph = document.getElementById("horsesListed");
 horseObjParagraph.innerText = `Horse no. ${horse1.id.toString(10)}: ${horse1.name}
 Riders: ${horse1.riders[0]}, ${horse1.riders[1]}
 Age: ${horse1.age}
@@ -94,7 +94,7 @@ function subtractOne(num = 0) {
     return num - 1;
 }
 
-const experimentParagraph = document.getElementById("paragraph2");
+const experimentParagraph = document.getElementById("defaultParams");
 experimentParagraph.innerText = `subtractOne returns ${subtractOne(5)} when passed the number five as a parameter.
 subtractOne returns ${subtractOne()} when passed nothing.`;
 
@@ -124,7 +124,7 @@ function doItThenLogIt(func) {
 doItThenLogIt(preparedBurger);
 doItThenLogIt(doMyLaundry);
 
-const lambdaParagraph = document.getElementById("paragraph3");
+const lambdaParagraph = document.getElementById("laundryBurgerExamples");
 lambdaParagraph.innerText = `${doMyLaundry(5, 2)}
 ${preparedBurger(["cheese", "ketchup", "mustard", "tomato", "lettuce", "pickle"])}`;
 

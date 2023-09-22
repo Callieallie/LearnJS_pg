@@ -33,7 +33,19 @@
     <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
     <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
     <div class="center">
-        <h1 class="headerStyle">HTML Practice Page</h1>
+        <h1 class="headerStyle">HTML Practice Page</h1> <!--Page Topic-->
+        <h2>Headers</h2> <!--Sub-topic-->
+        <div>
+            <p>
+                I. This is the precedance an h1 element should have. There can only be one h1 per page.<br>
+                __A. An h2 element should be a more narrowed topic pertaining to the h1.<br>
+                __B. You can have as many h2-h6 elements as you would like. <br>
+                __ __1. h3 elements are intended for sub-topics of h2 elements. <br>
+                __ __2. Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter. <br>
+                __ __ __a.If h3 elements have sub-sections, implement them with h4 elements. <br>
+            </p>
+        </div>
+        <h2>Section_2</h2> <!--Sub-topic-->
     </div>
 
     <img src="/images/dividers/divider9.png" alt="text divider">
@@ -41,3 +53,24 @@
     <script src="/scripts/examples/page5.js"></script>
 </body>
 </html>
+
+<!--
+    -------- Learn HTML/CSS Notes --------
+    --- HTML Elements (they become tags when wrapped in <>)
+    h1: The most important topic of the page (Big Newspaper Title) ONE PER PAGE
+    h2: Defines titles of the page's major sections (sub-sections of h1)
+    h3-h6: Each heading-type represents a further subsection of it's predecessor
+    ***Think of headers like you would the alphanumeric outline system in paper drafting
+    ***Roman Numerals, Capitalized Letters, Arabic Numerals (1-9), and Lowercase Letters
+
+    --------------------------------------
+    --- HTML Semantics
+    - HTML is written to give a website structure. Appearance is left to CSS.
+
+    --------------------------------------
+    --- Assorted Notes
+    - emmet: a plugin used to assist in writing HTML quickly. Already installed with VS Code
+    - Meaningful headings are important especially for screen readers and for SEO
+    - Axe is the name of a popular accessability testing tool
+    - 
+-->
