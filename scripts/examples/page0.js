@@ -17,7 +17,7 @@ paintColors.forEach((color, index) => {
     paintings.push(`${color} ${animals[index]}`);
 })
 
-document.getElementById("paragraph1").innerText = `${paintings.join("\n")}`;
+document.getElementById("paintingsParagraph").innerText = `${paintings.join("\n")}`;
 
 // Get the average of the numbers in the studentGrades array and print it to screen
 studentGrades = [88, 94, 92, 84, 87, 99, 100, 78];
@@ -29,7 +29,7 @@ const averageGrade = (grades) => {
     })
     return gradeSum / grades.length;
 }
-document.getElementById("paragraph2").innerText = `${studentGrades.join(", ")}
+document.getElementById("gradesParagraph").innerText = `${studentGrades.join(", ")}
 The average grade among those listed is ${averageGrade(studentGrades)}`; 
 
 // Implicit Return
@@ -40,7 +40,7 @@ const itemsBeforeTax = [150.00, 5.00, 6.00, 4.25, 833.75, 42.50];
 // NOTE: Remember, you can only assign a constant variable once!
 const itemsAfterTax = itemsBeforeTax.map(item => item + item * .1);
 
-document.getElementById("paragraph3").innerText = `Motorcycle Helmet: $${itemsBeforeTax[0]} becomes $${itemsAfterTax[0]}
+document.getElementById("taxParagraph").innerText = `Motorcycle Helmet: $${itemsBeforeTax[0]} becomes $${itemsAfterTax[0]}
 Gel Pen Set: $${itemsBeforeTax[1]} becomes $${itemsAfterTax[1]}
 Frozen Yogurt: $${itemsBeforeTax[2]} becomes $${itemsAfterTax[2]}
 Jumbo Bag of Gummy Clusters: $${itemsBeforeTax[3]} becomes $${itemsAfterTax[3]}`;

@@ -88,10 +88,14 @@ hr {
     justify-content: center;
 }
 
-.paragraphCenter {
+.paragraphCenterText {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.centerParagraph {
+
 }
 
 .topNavigation {
