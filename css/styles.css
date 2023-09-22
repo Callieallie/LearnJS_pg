@@ -94,9 +94,9 @@ hr {
     text-align: center;
 }
 
-.centerDivider {
-    margin-left: 25%;
-    margin-right: 25%;
+.centerDividerContents {
+    display: flex;
+    justify-content: center;
 }
 
 .topNavigation {
@@ -145,7 +145,7 @@ This could lead to security issues when handling sensitive information.*/
     margin-bottom: 0px;
 }
 
-.miniBorder {
+.miniSectionBorder {
     width: 30%;
 }
 
@@ -160,6 +160,20 @@ This could lead to security issues when handling sensitive information.*/
     display: flex;
     justify-content: center;
     font-size: 4em;
+}
+
+/*List Styles*/
+/*Lists default to listing with numbers.*/
+.listRomanNumerals {
+    list-style-type: upper-roman;
+}
+
+.listUpperAlphabet {
+    list-style-type: upper-alpha;
+}
+
+.listLowerAlphabet {
+    list-style-type: lower-alpha;
 }
 
 /*Pseudo Classes and Pseudo Elements*/
