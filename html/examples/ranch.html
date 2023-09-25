@@ -24,29 +24,59 @@
         </div>
     </div>
 
-    <!--For the time being, I will only have one column of text on this page-->
-    <!--I would like to section out exercises with nice titles before each topic is covered-->
-    <!--FUTURE FEATURE-->
-    <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
-    <!-- -- To do this, I will add a div one layer above the center div below. -- -->
-    <!-- -- This div will be formatted similarly to the navigation bar. -- -->
-    <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
-    <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
-    <div class="center">
-        <h1 class="headerStyle">Objects in JavaScript</h1> <!--Page Topic-->
-        <img src="/images/dividers/divider9.png" alt="text divider">
-        <h2 class="headerStyle">Horses at Tumbleweed Ranch</h2>
-        <p id="horsesListed" class="paragraphCenterText">Horses not found</p>
-        <img src="/images/dividers/divider9.png" alt="text divider">
-        <h2 class="headerStyle">Default Parameters</h2>
-        <p id="defaultParams" class="paragraphCenterText">Default parameter examples not found</p>
-        <img src="/images/dividers/divider9.png" alt="text divider">
-        <h2 class="headerStyle">Introduction to Lambdas</h2>
-        <p id="laundryBurgerExamples" class="paragraphCenterText">Laundry and burger examples not found</p>
-    </div>
+    <div id="outerDivider">
+        <div id="leftSiderbarDiv">
+            <span>Left Sidebar</span>
+        </div>
+        <div id="mainDiv">
+            <main>
+                <!--For the time being, I will only have one column of text on this page-->
+                <!--I would like to section out exercises with nice titles before each topic is covered-->
+                <!--FUTURE FEATURE-->
+                <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
+                <!-- -- To do this, I will add a div one layer above the center div below. -- -->
+                <!-- -- This div will be formatted similarly to the navigation bar. -- -->
+                <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
+                <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
+                <div class="center">
+                    <h1 class="headerStyle">Objects in JavaScript</h1> <!--Page Topic-->
+                    <img src="/images/dividers/divider9.png" alt="text divider">
+                    <h2 class="headerStyle">Horses at Tumbleweed Ranch</h2>
+                    <p id="horsesListed" class="paragraphCenterText">Horses not found</p>
+                    <img src="/images/dividers/divider9.png" alt="text divider">
+                    <h2 class="headerStyle">Default Parameters</h2>
+                    <p id="defaultParams" class="paragraphCenterText">Default parameter examples not found</p>
+                    <img src="/images/dividers/divider9.png" alt="text divider">
+                    <h2 class="headerStyle">Introduction to Lambdas</h2>
+                    <p id="laundryBurgerExamples" class="paragraphCenterText">Laundry and burger examples not found</p>
+                </div>
 
-    <img src="/images/dividers/divider9.png" alt="text divider">
+                <img src="/images/dividers/divider9.png" alt="text divider">
+            </main>
+        </div>
+    
+        <div id="rightSidebarDiv">
+            <span>Right Sidebar</span>
+        </div>
+    </div>
     
     <script src="/scripts/examples/ranch.js"></script>
 </body>
 </html>
+
+<!-- SIDEBAR DIVIDER STRUCTURE
+<div id="outerDivider">
+    <div id="leftSiderbarDiv">
+        <span>Left Sidebar</span>
+    </div>
+    <div id="mainDiv">
+        <main>
+            
+        </main>
+    </div>
+
+    <div id="rightSidebarDiv">
+        <span>Right Sidebar</span>
+    </div>
+</div>
+-->

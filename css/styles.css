@@ -23,8 +23,8 @@ h1 {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
     border-radius: 12px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
     border-style:dashed;
@@ -69,8 +69,27 @@ hr {
     width: 40%;
 }
 
-/*IDs*/
+li {
+    font-size: 20px;
+}
 
+/*IDs*/
+#outerDivider {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftSiderbarDiv {
+    width: 25%;
+}
+/*vh stands for "viewport height". I have set the height of mainDiv to equal the height of the page.*/
+#mainDiv {
+    height: 100vh;
+}
+
+#rightSidebarDiv {
+    width: 25%
+}
 
 /* Classes */
 .row {

@@ -24,32 +24,62 @@
         </div>
     </div>
 
-    <!--FUTURE FEATURE-->
-    <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
-    <!-- -- To do this, I will add a div one layer above the center div below. -- -->
-    <!-- -- This div will be formatted similarly to the navigation bar. -- -->
-    <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
-    <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
-    <div class="row">
-        <div class="column">
-            <p id="experimentalP">Dr.Phil can send you to the ranch.</p>
-            <p id="experimantalP1">Do not anger Dr.Phil.</p>
-            <p id="experimantalP2">He is a very powerful psychologist doctor.</p>
-            <p id="experimantalP3">Catch me outside... how about that.</p>
-
-            <p id="charTest1">Char Test</p>
-            <p id="subStrP">Substring Test</p>
-            <p id="templateStringP">Test</p>
-            <p id="spendingFunction">Spending Log</p>
+    <div id="outerDivider">
+        <div id="leftSiderbarDiv">
+            <span>Left Sidebar</span>
         </div>
-        <div class="column">
-            <p id="gradeExample">Grade Example for Conditions</p>
-            <p id="flowerList">Flower Array Example</p>
-            <p id="arrayMethods">Array Exercises</p>
+        <div id="mainDiv">
+            <main>
+                <!--FUTURE FEATURE-->
+                <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
+                <!-- -- To do this, I will add a div one layer above the center div below. -- -->
+                <!-- -- This div will be formatted similarly to the navigation bar. -- -->
+                <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
+                <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
+                <div class="row">
+                    <div class="column">
+                        <p id="experimentalP">Dr.Phil can send you to the ranch.</p>
+                        <p id="experimantalP1">Do not anger Dr.Phil.</p>
+                        <p id="experimantalP2">He is a very powerful psychologist doctor.</p>
+                        <p id="experimantalP3">Catch me outside... how about that.</p>
+
+                        <p id="charTest1">Char Test</p>
+                        <p id="subStrP">Substring Test</p>
+                        <p id="templateStringP">Test</p>
+                        <p id="spendingFunction">Spending Log</p>
+                    </div>
+                    <div class="column">
+                        <p id="gradeExample">Grade Example for Conditions</p>
+                        <p id="flowerList">Flower Array Example</p>
+                        <p id="arrayMethods">Array Exercises</p>
+                    </div>
+                </div>
+                <img src="/images/dividers/divider.png" alt="text divider">
+            </main>
+        </div>
+    
+        <div id="rightSidebarDiv">
+            <span>Right Sidebar</span>
         </div>
     </div>
-    <img src="/images/dividers/divider.png" alt="text divider">
     
     <script src="/scripts/main.js"></script>
 </body>
 </html>
+
+<!-- SIDEBAR DIVIDER STRUCTURE
+<div id="outerDivider">
+    <div id="leftSiderbarDiv">
+        <span>Left Sidebar</span>
+    </div>
+    <div id="mainDiv">
+        <main>
+            
+        </main>
+    </div>
+
+    <div id="rightSidebarDiv">
+        <span>Right Sidebar</span>
+    </div>
+</div>
+-->
