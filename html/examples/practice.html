@@ -42,31 +42,29 @@
         </div>
         <div id="mainDiv">
             <main>
-                <!--For the time being, I will only have one column of text on this page-->
-                <!--I would like to section out exercises with nice titles before each topic is covered-->
-                <!--FUTURE FEATURE-->
-                <!-- -- I would like to have two sidebars added: one on each side of the center text -- -->
-                <!-- -- To do this, I will add a div one layer above the center div below. -- -->
-                <!-- -- This div will be formatted similarly to the navigation bar. -- -->
-                <!-- -- There will be three colums inside of this div all organized in a row format. -- -->
-                <!-- -- In the new "sidebars" I will be able to add some animations and text. -- -->
                 <div class="center">
                     <h1 class="headerStyle">HTML Practice Page</h1> <!--Page Topic-->
                     <h2>Headers</h2> <!--Sub-topic-->
                     <div class="centerDividerContents">
                         <ol class="listRomanNumerals">
-                            <li>This is the precedance an h1 element should have. There can only be one h1 per page.</li>
-                            <ol class="listUpperAlphabet">
-                                <li>An h2 element should be a more narrowed topic pertaining to the h1.</li>
-                                <li>You can have as many h2-h6 elements as you would like.</li>
-                                <ol>
-                                    <li>h3 elements are intended for sub-topics of h2 elements.</li>
-                                    <li>Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter.</li>
-                                    <ol class="listLowerAlphabet">
-                                        <li>If h3 elements have sub-sections, implement them with h4 elements.</li>
-                                    </ol>
+                            <li>
+                                This is the precedance an h1 element should have. There can only be one h1 per page.
+                                <ol class="listUpperAlphabet">
+                                    <li>An h2 element should be a more narrowed topic pertaining to the h1.</li>
+                                    <li>
+                                        You can have as many h2-h6 elements as you would like.
+                                        <ol>
+                                            <li>h3 elements are intended for sub-topics of h2 elements.</li>
+                                            <li>
+                                                Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter.
+                                                <ol class="listLowerAlphabet">
+                                                    <li>If h3 elements have sub-sections, implement them with h4 elements.</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
                                 </ol>
-                            </ol>
+                            </li>
                         </ol>
                     </div>
                     <h2>Paragraphs</h2> <!--Sub-topic-->
@@ -95,6 +93,19 @@
                             &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
                             &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
                             &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                            &lt;<span class="elementCodeExample">/ul</span>&gt;<br>
+                        </code>
+                        <p>Lists can also be nested inside of one another. When nesting lists, be careful to include the nested list in the list item element it is a part of.</p>
+                        <code>
+                            &lt;<span class="elementCodeExample">ul</span>&gt;<br>
+                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">ul</span>&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Nested Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Nested Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">/ul</span>&gt;<br>
+                            &emsp;&emsp;&lt;<span class="elementCodeExample">/li</span>&gt;<br>
                             &lt;<span class="elementCodeExample">/ul</span>&gt;<br>
                         </code>
                     </div>
