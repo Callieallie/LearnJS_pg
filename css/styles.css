@@ -202,6 +202,11 @@ This could lead to security issues when handling sensitive information.*/
     list-style-type: none;
 }
 
+/*Code Example Classes*/
+.elementCodeExample {
+    color: rgb(17, 0, 255);
+}
+
 /*Pseudo Classes and Pseudo Elements*/
 
 /* Adjusting href link colors*/
