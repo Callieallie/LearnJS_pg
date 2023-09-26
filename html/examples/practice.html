@@ -72,7 +72,32 @@
                     <h2>Paragraphs</h2> <!--Sub-topic-->
                     <div class="centerDividerContents">
                         <p>It is important to use paragraphs as you would in an English class. Each paragraph should have its own topic. A paragraph element should not hold several paragraphs of content. Instead, stick to using a seperate paragraph element for each paragraph of content.</p>
+                        <p>A paragraph can be as short as a single sentence or prompt or as long as you want so long as you stick to the one topic.</p>
+                        <p>Although you may be tempted to add newline breaks with the br element, it is not reccomended that you do so unless you are working with an address or a poem.</p>
                     </div> 
+                    <h2>Lists: Ordered (ol) and Unordered (ul)</h2>
+                    <div class="centerDividerContents">
+                        <p>Ordered and unordered lists are commonly reffered to as bullet or numbered lists in document editing software such as Microsoft Word or Google Docs.</p>
+                        <p>An ordered list will indicate some sort of precidence in the list of each list item. Think of the classic college paper outline. In an outline, it matters which topic is first, second, third, etc.</p>
+                        <p>An unordered list is comparable to the standard bullet list. In an unordered list, it does not matter which list element is listed first, second, or third.</p>
+                        <p>The following displays the general format of a list.</p>
+                        <code>
+                            &lt;ul&gt;<br>
+                            <!--
+                                Initially, I displayed the code as a list using "&lt" to escape the "<" 
+                                character and "&gt" to escape the ">" character.
+                            -->
+                            <!--
+                                Scott reccomended that I use a code HTML elment to wrap my list example 
+                                as that better describes the information I want to convey. 
+                                I removed the ul and li elements and created indentation using "&emsp" which inserts a space.
+                            -->
+                            &emsp;&emsp;&lt;li&gt;Item One&lt;/li&gt;<br>
+                            &emsp;&emsp;&lt;li&gt;Item Two&lt;/li&gt;<br>
+                            &emsp;&emsp;&lt;li&gt;Item Three&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                        </code>
+                    </div>
                 </div>
         
                 <img src="/images/dividers/divider9.png" alt="text divider">
@@ -97,6 +122,9 @@
     ***Think of headers like you would the alphanumeric outline system in paper drafting
     ***Roman Numerals, Capitalized Letters, Arabic Numerals (1-9), and Lowercase Letters
     br: used to add a newline/carriage-return. NOT FOR SEPERATING PARAGRAPHS (or elements)!
+            - The br element should be reserved for poems and addresses.
+            - DO NOT use the br element to format a paragraph
+    
 
 
     --------------------------------------

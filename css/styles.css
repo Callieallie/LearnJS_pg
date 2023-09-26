@@ -41,8 +41,8 @@ h2 {
     An alternative way to achieve the same look is to use the text-shadow property*/
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
@@ -85,6 +85,8 @@ li {
 /*vh stands for "viewport height". I have set the height of mainDiv to equal the height of the page.*/
 #mainDiv {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #rightSidebarDiv {
@@ -115,6 +117,7 @@ li {
 
 .centerDividerContents {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -193,6 +196,10 @@ This could lead to security issues when handling sensitive information.*/
 
 .listLowerAlphabet {
     list-style-type: lower-alpha;
+}
+
+.listNoVisual {
+    list-style-type: none;
 }
 
 /*Pseudo Classes and Pseudo Elements*/
