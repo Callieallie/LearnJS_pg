@@ -13,6 +13,13 @@ header {
     font-size: 75px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -24,18 +31,19 @@ footer {
     padding: 2%;
 }
 
+/* -------- HEADERS -------- */
+
 h1 {
     font-family: 'Lilita One', cursive;
     display: flex;
     justify-content: center;
-    font-size: 4em;
+    width: 98%;
+    font-size: 60px;
     background-color: black;
     color: black;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
     border-radius: 12px;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
     border-style:dashed;
@@ -43,17 +51,17 @@ h1 {
     font-size: 50px;
 }
 
-h2 {
+h2, hgroup:has(h2) p {
     font-family: 'Lilita One', cursive;
-    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
     color: white;
     /* The webkit-text-stroke is not widely supported by browsers.
     This code does work on Google Chrome, but do not expect it to work everywhere.
     An alternative way to achieve the same look is to use the text-shadow property*/
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
@@ -61,75 +69,61 @@ h2 {
 
 h3 {
     font-family: 'Lilita One', cursive;
-    font-size: 1.5em;
+    font-size: 20px;
     color: black;
     /* The webkit-text-stroke is not widely supported by browsers.
     This code does work on Google Chrome, but do not expect it to work everywhere.
     An alternative way to achieve the same look is to use the text-shadow property*/
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 0px;
     margin-bottom: 0px;
-    text-align: center;
 }
 
-img.displayCenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-img.divider {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 60%;
-}
-
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+/* -------- CODE -------- */
 
 code {
     font-size: 1.5em;align-self: center;
 }
 
-hr {
-    border-width: 5px;
-    width: 40%;
+/*Code Example Classes*/
+.elementCodeExample {
+    color: rgb(17, 0, 255);
 }
 
-li {
-    font-size: 20px;
+/* -------- HR: THEMATIC BREAKS -------- */
+
+hr {
+    background-image: url(/images/dividers/divider9.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    height: 10px;
+    width: 600px;
+}
+
+hr.fancy {
+    background-image: url(/images/dividers/divider4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    height: 58px;
+    width: 600px;
 }
 
 /*IDs*/
 #outerDivider {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 #leftSiderbarDiv {
-    width: 25%;
-}
-/*vh stands for "viewport height". I have set the height of mainDiv to equal the height of the page.*/
-#mainDiv {
-    display: flex;
-    flex-direction: column;
+    width: 10%;
 }
 
 #rightSidebarDiv {
-    width: 25%
+    width: 10%
 }
 
 /* Classes */
@@ -140,24 +134,6 @@ li {
 
 .column {
     flex-basis: 40%;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.paragraphCenterText {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.centerDividerContents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .topNavigation {
@@ -195,6 +171,43 @@ li {
     z-index: 1;
 }
 
+/* -------- IMAGES -------- */
+
+img.displayCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.divider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+/* -------- PARAGRAPHS -------- */
+
+p.commonParagraph {
+    font-family: verdana;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.paragraphCenterText {
+    display: flex;
+    justify-content: center;
+    font-family: verdana;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*It is better to make bold or italicized portions of text seperate paragraphs than to
 use .innerHTML to insert <b> tags and such because .innerHTML is vulnerable to being 
 "JavaScript Injection". Someone could change the DOM and run unwanted HTML scripts.
@@ -206,21 +219,10 @@ This could lead to security issues when handling sensitive information.*/
     margin-bottom: 0px;
 }
 
-.miniSectionBorder {
-    width: 30%;
-}
-
 /*Dropdown Navigation Pseudoclass*/
 .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
-}
-
-.headerStyle {
-    font-family: 'Lilita One', cursive;
-    display: flex;
-    justify-content: center;
-    font-size: 4em;
 }
 
 /*List Styles*/
@@ -241,9 +243,14 @@ This could lead to security issues when handling sensitive information.*/
     list-style-type: none;
 }
 
-/*Code Example Classes*/
-.elementCodeExample {
-    color: rgb(17, 0, 255);
+li.listHeader {
+    font-family: 'Neucha', cursive;
+    font-size: 30px;
+}
+
+li.listBody {
+    font-family: 'Laila', sans-serif;
+    font-size: 15px;
 }
 
 /*Pseudo Classes and Pseudo Elements*/
@@ -273,4 +280,8 @@ h3::selection {
 }
 
 /* Google Fonts */
-/*font-family: 'Lilita One', cursive;*/
+/*
+font-family: 'Laila', sans-serif;
+font-family: 'Lilita One', cursive;
+font-family: 'Neucha', cursive;
+*/

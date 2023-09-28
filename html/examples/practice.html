@@ -25,7 +25,7 @@
                 <a href="/html/examples/page1.html">Page_1</a>
                 <a href="/html/examples/page2.html">Page_2</a>
                 <a href="/html/examples/page3.html">Page_3</a>
-                <a href="/html/examples/notes.html">HTML Notes</a>
+                <a href="/html/examples/notes.html">HTML and CSS Notes</a>
                 <a href="/html/examples/practice.html">HTML Practice</a>
                 <a href="/html/examples/ranch.html">Ranch</a>
             </div>
@@ -41,101 +41,91 @@
         <div id="leftSiderbarDiv">
             <span>Left Sidebar</span>
         </div>
-        <div id="mainDiv">
-            <!--An easy way to determine what goes in main and what does not is to
-            weed out elements which are repeatedly used on every page throughout the site.
-            These repeated elements should go outside of main.-->
-            <main>
-                <div class="center">
-                    <h1 class="headerStyle">HTML Practice Page</h1> <!--Page Topic-->
-                    <h2>Headers</h2> <!--Sub-topic-->
-                    <div class="centerDividerContents">
-                        <ol class="listRomanNumerals">
-                            <li>
-                                This is the precedance an h1 element should have. There can only be one h1 per page.
-                                <ol class="listUpperAlphabet">
-                                    <li>An h2 element should be a more narrowed topic pertaining to the h1.</li>
-                                    <li>
-                                        You can have as many h2-h6 elements as you would like.
-                                        <ol>
-                                            <li>h3 elements are intended for sub-topics of h2 elements.</li>
-                                            <li>
-                                                Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter.
-                                                <ol class="listLowerAlphabet">
-                                                    <li>If h3 elements have sub-sections, implement them with h4 elements.</li>
-                                                </ol>
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </div>
-                    <h2>Paragraphs</h2> <!--Sub-topic-->
-                    <div class="centerDividerContents">
-                        <p>It is important to use paragraphs as you would in an English class. Each paragraph should have its own topic. A paragraph element should not hold several paragraphs of content. Instead, stick to using a seperate paragraph element for each paragraph of content.</p>
-                        <p>A paragraph can be as short as a single sentence or prompt or as long as you want so long as you stick to the one topic.</p>
-                        <p>Although you may be tempted to add newline breaks with the br element, it is not reccomended that you do so unless you are working with an address or a poem.</p>
-                    </div> 
-                    <h2>Lists: Ordered (ol) and Unordered (ul)</h2>
-                    <div class="centerDividerContents">
-                        <p>Ordered and unordered lists are commonly reffered to as bullet or numbered lists in document editing software such as Microsoft Word or Google Docs.</p>
-                        <p>An ordered list will indicate some sort of precidence in the list of each list item. Think of the classic college paper outline. In an outline, it matters which topic is first, second, third, etc.</p>
-                        <p>An unordered list is comparable to the standard bullet list. In an unordered list, it does not matter which list element is listed first, second, or third.</p>
-                        <p>The following displays the general format of a list.</p>
-                        <code>
-                            &lt;<span class="elementCodeExample">ul</span>&gt;<br>
-                            <!--
-                                Initially, I displayed the code as a list using "&lt" to escape the "<" 
-                                character and "&gt" to escape the ">" character.
-                            -->
-                            <!--
-                                Scott reccomended that I use a code HTML elment to wrap my list example 
-                                as that better describes the information I want to convey. 
-                                I removed the ul and li elements and created indentation using "&emsp" which inserts a space.
-                            -->
-                            <!--
-                                FUTURE FEATURE: Write a JavaScript function to generate properly formatted code
-                                examples so as to avoid the overuse of "&emsp", "&lt". "&gt", and "<br>".
-                            -->
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &lt;<span class="elementCodeExample">/ul</span>&gt;<br>
-                        </code>
-                        <p>Lists can also be nested inside of one another. When nesting lists, be careful to include the nested list in the list item element it is a part of.</p>
-                        <code>
-                            &lt;<span class="elementCodeExample">ul</span>&gt;<br>
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three<br>
-                            &emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">ul</span>&gt;<br>
-                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Nested Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Nested Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">/ul</span>&gt;<br>
-                            &emsp;&emsp;&lt;<span class="elementCodeExample">/li</span>&gt;<br>
-                            &lt;<span class="elementCodeExample">/ul</span>&gt;<br>
-                        </code>
-                    </div>
-                    <h2>Images</h2>
-                    <div class="centerDividerContents">
-                        <p>Images have the attributes src, width, height, and alt.</p>
-                        <code>
-                            &lt;src="/images/OswaldStencil.png" width="730" height="474" alt="Quinto Logo"&gt; <br>
-                            &lt;img src="https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png" width="600" height="400" alt="Lavender Flowers"&gt;
-                        </code>
-                        <img src="/images/OswaldStencil.png" class="displayCenter" width="730" height="474" alt="Quinto Logo">
-                        <p>Images cannot have any children and are therefore called "empty elements"</p>
-                        <p>Since empty elements cannot have children, they do not have a closing tag.</p>
-                        <img src="https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png" class="displayCenter" width="600" height="400" alt="Lavender Flowers">
-                        <p>Always specify the dimensions of images. Not doing so will negatively affect the user experience as the page layout might shift while the browser attempts to dispay the image correctly.</p>
-                    </div>
-                </div>
+        <!--An easy way to determine what goes in main and what does not is to
+        weed out elements which are repeatedly used on every page throughout the site.
+        These repeated elements should go outside of main.-->
+        <main>
+            <h1>HTML Practice Page</h1> <!--Page Topic-->
+            <h2>Headers</h2> <!--Sub-topic-->
+            <ol class="listRomanNumerals">
+                <li class="listBody">
+                    This is the precedance an h1 element should have. There can only be one h1 per page.
+                    <ol class="listUpperAlphabet">
+                        <li>An h2 element should be a more narrowed topic pertaining to the h1.</li>
+                        <li>
+                            You can have as many h2-h6 elements as you would like.
+                            <ol>
+                                <li>h3 elements are intended for sub-topics of h2 elements.</li>
+                                <li>
+                                    Think of h1 as the title of a book, h2 as the chapter title, and h3 as the topic of a section of the chapter.
+                                    <ol class="listLowerAlphabet">
+                                        <li>If h3 elements have sub-sections, implement them with h4 elements.</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <h2>Paragraphs</h2> <!--Sub-topic-->
+            <p>It is important to use paragraphs as you would in an English class. Each paragraph should have its own topic. A paragraph element should not hold several paragraphs of content. Instead, stick to using a seperate paragraph element for each paragraph of content.</p>
+            <p>A paragraph can be as short as a single sentence or prompt or as long as you want so long as you stick to the one topic.</p>
+            <p>Although you may be tempted to add newline breaks with the br element, it is not reccomended that you do so unless you are working with an address or a poem.</p>
+            <h2>Lists: Ordered (ol) and Unordered (ul)</h2>
+            <p>Ordered and unordered lists are commonly reffered to as bullet or numbered lists in document editing software such as Microsoft Word or Google Docs.</p>
+            <p>An ordered list will indicate some sort of precidence in the list of each list item. Think of the classic college paper outline. In an outline, it matters which topic is first, second, third, etc.</p>
+            <p>An unordered list is comparable to the standard bullet list. In an unordered list, it does not matter which list element is listed first, second, or third.</p>
+            <p>The following displays the general format of a list.</p>
+            <code>
+                &lt;<span class="elementCodeExample">ul</span>&gt;<br>
+                <!--
+                    Initially, I displayed the code as a list using "&lt" to escape the "<" 
+                    character and "&gt" to escape the ">" character.
+                -->
+                <!--
+                    Scott reccomended that I use a code HTML elment to wrap my list example 
+                    as that better describes the information I want to convey. 
+                    I removed the ul and li elements and created indentation using "&emsp" which inserts a space.
+                -->
+                <!--
+                    FUTURE FEATURE: Write a JavaScript function to generate properly formatted code
+                    examples so as to avoid the overuse of "&emsp", "&lt". "&gt", and "<br>".
+                -->
+                &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &lt;<span class="elementCodeExample">/ul</span>&gt;<br>
+            </code>
+            <p>Lists can also be nested inside of one another. When nesting lists, be careful to include the nested list in the list item element it is a part of.</p>
+            <code>
+                &lt;<span class="elementCodeExample">ul</span>&gt;<br>
+                &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">ul</span>&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Nested Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Nested Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;<span class="elementCodeExample">/ul</span>&gt;<br>
+                &emsp;&emsp;&lt;<span class="elementCodeExample">/li</span>&gt;<br>
+                &lt;<span class="elementCodeExample">/ul</span>&gt;<br>
+            </code>
+            <h2>Images</h2>
+            <p>Images have the attributes src, width, height, and alt.</p>
+            <code>
+                <!--src stands for source-->
+                <!--It is important to define the image's width and height so the
+                browser can determine the correct aspect ratio for displaying it.-->
+                &lt;src="/images/OswaldStencil.png" width="730" height="474" alt="Quinto Logo"&gt; <br>
+                &lt;img src="https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png" width="600" height="400" alt="Lavender Flowers"&gt;
+            </code>
+            <img src="/images/OswaldStencil.png" class="displayCenter" width="730" height="474" alt="Quinto Logo">
+            <p>Images cannot have any children and are therefore called "empty elements"</p>
+            <p>Since empty elements cannot have children, they do not have a closing tag.</p>
+            <img src="https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png" class="displayCenter" width="600" height="400" alt="Lavender Flowers">
+            <p>Always specify the dimensions of images. Not doing so will negatively affect the user experience as the page layout might shift while the browser attempts to dispay the image correctly.</p>
+        <hr>
+        </main>
         
-                <img src="/images/dividers/divider9.png" class="divider" alt="text divider">
-            </main>
-        </div>
-    
         <div id="rightSidebarDiv">
             <span>Right Sidebar</span>
         </div>
@@ -163,6 +153,7 @@
     br: used to add a newline/carriage-return. NOT FOR SEPERATING PARAGRAPHS (or elements)!
             - The br element should be reserved for poems and addresses.
             - DO NOT use the br element to format a paragraph
+    ---
     LANDMARK ELEMENTS
     main: Represents the dominant content of the page
     header: Contains any repeated Intro to the Page content (often the h1)
@@ -183,6 +174,14 @@
             - Often used for parts of text in a different language.
             - Can be used for the voice of a character in a story, or to show sarcasm.
             - The lang attribute should be put on any i element representing a language change.
+    ---
+    IMAGES
+    img: image element
+            - src attribute defines the source of the image (via browser or local)
+            - height and width attributes define the images aspect ratio
+            - alt attribute gives the image an "alternative text" in case the image cannot be displayed
+                - Providing an alternate text makes the page more accessable and better for SEO
+    
     
 
     --------------------------------------
