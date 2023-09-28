@@ -13,6 +13,17 @@ header {
     font-size: 75px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-width: 10px;
+    border-style: double;
+    height: 200px;
+    text-align: center;
+    padding: 2%;
+}
+
 h1 {
     font-family: 'Lilita One', cursive;
     display: flex;
@@ -34,13 +45,29 @@ h1 {
 
 h2 {
     font-family: 'Lilita One', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
     /* The webkit-text-stroke is not widely supported by browsers.
     This code does work on Google Chrome, but do not expect it to work everywhere.
     An alternative way to achieve the same look is to use the text-shadow property*/
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5em;
+    color: black;
+    /* The webkit-text-stroke is not widely supported by browsers.
+    This code does work on Google Chrome, but do not expect it to work everywhere.
+    An alternative way to achieve the same look is to use the text-shadow property*/
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 0px;
@@ -84,7 +111,6 @@ li {
 }
 /*vh stands for "viewport height". I have set the height of mainDiv to equal the height of the page.*/
 #mainDiv {
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }

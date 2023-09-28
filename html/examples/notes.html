@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<title>HTML Notes - Callieallie's Website</title>
+</head>
+<body>
+    <header>Callieallie's Website</header>
+    <div class="topNavigation">
+        <a href="/html/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <div class="dropdown">
+            <span>Examples</span>
+            <div class="dropdown-content">
+                <a href="/html/examples/arraysObjects.html">Arrays and Objects</a>
+                <a href="/html/examples/page1.html">Page_1</a>
+                <a href="/html/examples/page2.html">Page_2</a>
+                <a href="/html/examples/page3.html">Page_3</a>
+                <a href="/html/examples/notes.html">HTML Notes</a>
+                <a href="/html/examples/practice.html">HTML Practice</a>
+                <a href="/html/examples/ranch.html">Ranch</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="outerDivider">
+        <div id="leftSiderbarDiv">
+            <span>Left Sidebar</span>
+        </div>
+        <div id="mainDiv">
+            <main>
+                <div class="center">
+                    <h1 class="headerStyle">HTML Notes</h1>
+                    <h2>HTML and CSS Notes</h2>
+                    <div class="centerDividerContents">
+                        <h3>HTML Elements (they become tags when wrapped in &lt;&gt;)</h3>
+                        <ul>
+                            <li>BLOCK ELEMENTS
+                                <ul>
+                                    <li>h1: The most important topic of the page (Big Newspaper Title) ONE PER PAGE</li>
+                                    <li>h2: Defines titles of the page's major sections (sub-sections of h1)</li>
+                                    <li>h3-h6: Each heading-type represents a further subsection of it's predecessor</li>
+                                    <li>***Think of headers like you would the alphanumeric outline system in paper drafting</li>
+                                    <li>***Roman Numerals, Capitalized Letters, Arabic Numerals (1-9), and Lowercase Letters</li>
+                                    <li>br: used to add a newline/carriage-return. NOT FOR SEPERATING PARAGRAPHS (or elements)!
+                                        <ol>
+                                            <li>The br element should be reserved for poems and addresses.</li>
+                                            <li>DO NOT use the br element to format a paragraph.</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>LANDMARK ELEMENTS
+                                <ol>
+                                    <li>main: Represents the dominant content of the page</li>
+                                    <li>header: Contains any repeated Intro to the Page content (often the h1)</li>
+                                    <li>footer: Contains miscelanious information towards the end of a page</li>
+                                </ol>
+                            </li>
+                            <li>INLINE ELEMENTS
+                                <ol>
+                                    <li>strong: used to strongly emphasize important sections of text in a paragraph. Is inline in nature.
+                                        <ol>
+                                            <li>DO NOT use a strong element as a way to bolden text.</li>
+                                            <li>HTML should be used for meaning. If you need bold text, use CSS.</li>
+                                            <li>Use strong to point out words or phrases that encompass the meaning of a paragraph or page.</li>
+                                        </ol>
+                                    </li>
+                                    <li>b: "bring attention to". Draws attention but does not add emphasis.
+                                        <ol>
+                                            <li>Use b to add some contrast in focus.</li>
+                                            <li>Imagine the text in the b element saying "notice me :&#41"</li>
+                                        </ol>
+                                    </li>
+                                    <li>em: "emphasis". Does not have to do with importance, but rather inflection.
+                                        <ol>
+                                            <li>"Did *you* find the keys?" emphasizes "you"</li>
+                                            <li>Again, DO NOT use em or any other HTML element for style.</li>
+                                        </ol>
+                                    </li>
+                                    <li>i: "idiomatic text". Word(s) spoken in a differing voice or mood.
+                                        <ol>
+                                            <li>Often used for parts of text in a different language.</li>
+                                            <li>Can be used for the voice of a character in a story, or to show sarcasm.</li>
+                                            <li>The lang attribute should be put on any i element representing a language change.</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h3>Assorted Notes</h3>
+                        <ol>
+                            <li>emmet: a plugin used to assist in writing HTML quickly. Already installed with VS Code</li>
+                            <li>Meaningful headings are important especially for screen readers and for SEO</li>
+                            <li>Axe is the name of a popular accessability testing tool</li>
+                            <li>Boilerplate: "!"+tab will create a basic HTML template</li>
+                            <li>COMMENTS: Ctrl+"/" will create a new html comment</li>
+                            <li>Validating HTML: validator.w3.org</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <img src="/images/dividers/divider9.png" alt="text divider">
+            </main>
+        </div>
+    
+        <div id="rightSidebarDiv">
+            <span>Right Sidebar</span>
+        </div>
+    </div>
+    
+    <script src="/scripts/examples/notes.js"></script>
+</body>
+</html>
+
+<!-- SIDEBAR DIVIDER STRUCTURE
+<div id="outerDivider">
+    <div id="leftSiderbarDiv">
+        <span>Left Sidebar</span>
+    </div>
+    <div id="mainDiv">
+        <main>
+            
+        </main>
+    </div>
+
+    <div id="rightSidebarDiv">
+        <span>Right Sidebar</span>
+    </div>
+</div>
+-->

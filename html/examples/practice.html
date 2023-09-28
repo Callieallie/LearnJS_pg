@@ -13,6 +13,7 @@
     <title>HTML Practice Page - Callieallie's Website</title> <!--Displayed when searched for in Google-->
 </head>
 <body>
+    <!--Headers introduce the web page and may contain an h1 element, a logo, and/or some navigational elements.-->
     <header>Callieallie's Website</header> <!--Website Name-->
     <div class="topNavigation">
         <a href="/html/index.html">Home</a>
@@ -24,7 +25,7 @@
                 <a href="/html/examples/page1.html">Page_1</a>
                 <a href="/html/examples/page2.html">Page_2</a>
                 <a href="/html/examples/page3.html">Page_3</a>
-                <a href="/html/examples/page4.html">Page_4</a>
+                <a href="/html/examples/notes.html">HTML Notes</a>
                 <a href="/html/examples/practice.html">HTML Practice</a>
                 <a href="/html/examples/ranch.html">Ranch</a>
             </div>
@@ -41,6 +42,9 @@
             <span>Left Sidebar</span>
         </div>
         <div id="mainDiv">
+            <!--An easy way to determine what goes in main and what does not is to
+            weed out elements which are repeatedly used on every page throughout the site.
+            These repeated elements should go outside of main.-->
             <main>
                 <div class="center">
                     <h1 class="headerStyle">HTML Practice Page</h1> <!--Page Topic-->
@@ -90,6 +94,10 @@
                                 as that better describes the information I want to convey. 
                                 I removed the ul and li elements and created indentation using "&emsp" which inserts a space.
                             -->
+                            <!--
+                                FUTURE FEATURE: Write a JavaScript function to generate properly formatted code
+                                examples so as to avoid the overuse of "&emsp", "&lt". "&gt", and "<br>".
+                            -->
                             &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item One&lt;<span class="elementCodeExample">/li</span>&gt;<br>
                             &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Two&lt;<span class="elementCodeExample">/li</span>&gt;<br>
                             &emsp;&emsp;&lt;<span class="elementCodeExample">li</span>&gt;Item Three&lt;<span class="elementCodeExample">/li</span>&gt;<br>
@@ -119,6 +127,12 @@
             <span>Right Sidebar</span>
         </div>
     </div>
+
+    <footer>
+        <p>
+            Author: Callieallie Wayne
+        </p>
+    </footer>
     
     <script src="/scripts/examples/practice.js"></script>
 </body>
@@ -127,6 +141,7 @@
 <!--
     -------- Learn HTML/CSS Notes --------
     --- HTML Elements (they become tags when wrapped in <>)
+    BLOCK ELEMENTS
     h1: The most important topic of the page (Big Newspaper Title) ONE PER PAGE
     h2: Defines titles of the page's major sections (sub-sections of h1)
     h3-h6: Each heading-type represents a further subsection of it's predecessor
@@ -135,8 +150,27 @@
     br: used to add a newline/carriage-return. NOT FOR SEPERATING PARAGRAPHS (or elements)!
             - The br element should be reserved for poems and addresses.
             - DO NOT use the br element to format a paragraph
+    LANDMARK ELEMENTS
+    main: Represents the dominant content of the page
+    header: Contains any repeated Intro to the Page content (often the h1)
+    footer: Contains miscelanious information towards the end of a page
+    ----
+    INLINE ELEMENTS
+    strong: used to strongly emphasize important sections of text in a paragraph. Is inline in nature.
+            - DO NOT use a strong element as a way to bolden text.
+            - HTML should be used for meaning. If you need bold text, use CSS.
+            - Use strong to point out words or phrases that encompass the meaning of a paragraph or page.
+    b: "bring attention to". Draws attention but does not add emphasis.
+            - Use b to add some contrast in focus.
+            - Imagine the text in the b element saying "notice me :)"
+    em: "emphasis". Does not have to do with importance, but rather inflection.
+            - "Did *you* find the keys?" emphasizes "you"
+            - Again, DO NOT use em or any other HTML element for style.
+    i: "idiomatic text". Word(s) spoken in a differing voice or mood.
+            - Often used for parts of text in a different language.
+            - Can be used for the voice of a character in a story, or to show sarcasm.
+            - The lang attribute should be put on any i element representing a language change.
     
-
 
     --------------------------------------
     --- HTML Attributes
@@ -155,4 +189,5 @@
     - Axe is the name of a popular accessability testing tool
     - Boilerplate: "!"+tab will create a basic HTML template
     - COMMENTS: Ctrl+"/" will create a new html comment
+    - Validating HTML: validator.w3.org
 -->
