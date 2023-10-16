@@ -38,6 +38,11 @@ const products = ["Motorcycle Helmet", "Gel Pen Set", "Frozen Yogurt", "Jumbo Ba
 const itemsBeforeTax = [150.00, 5.00, 6.00, 4.25, 833.75, 42.50];
 
 // NOTE: Remember, you can only assign a constant variable once!
+// The following implicit return works without a stated return and 
+// does not return undefined because it meets these requirements:
+// 1. Is an arrow function
+// 2. The entire function is only ONE STATEMENT; there are no curly braces
+// 3. There is no return keyword
 const itemsAfterTax = itemsBeforeTax.map(item => item + item * .1);
 
 document.getElementById("taxParagraph").innerText = `Motorcycle Helmet: $${itemsBeforeTax[0]} becomes $${itemsAfterTax[0]}
@@ -45,6 +50,24 @@ Gel Pen Set: $${itemsBeforeTax[1]} becomes $${itemsAfterTax[1]}
 Frozen Yogurt: $${itemsBeforeTax[2]} becomes $${itemsAfterTax[2]}
 Jumbo Bag of Gummy Clusters: $${itemsBeforeTax[3]} becomes $${itemsAfterTax[3]}`;
 
+/*
+function double(value) {
+    return value * 2;
+}
+*/
+// The above can be rewritten as
+const double = value => value * 2;
+
+// Implicit return functions can also take multiple parameters
+const addValues = (value1, value2) => value1 + value2;
+
+// Practicing the array map function with implicit return
+const squaringNumbers = [2, 5, 9, 12, 4, 16, 1, 3];
+const numbersSquared = squaringNumbers.map(squaringNumber => squaringNumber * squaringNumber);
+
+document.getElementById("doubleParagraph").innerText = `If the number 2 is doubled, it becomes ${double(2)}.
+The numbers 6 and 14 make ${addValues(6, 14)} when added together.
+The numbers ${squaringNumbers.join(", ")} become ${numbersSquared.join(", ")} when squared.`;
 
 /* -------- Exercise Ideas --------
 - Cumulative/Running Average Algorithm 
