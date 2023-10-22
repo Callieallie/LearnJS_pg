@@ -69,9 +69,44 @@ document.getElementById("doubleParagraph").innerText = `If the number 2 is doubl
 The numbers 6 and 14 make ${addValues(6, 14)} when added together.
 The numbers ${squaringNumbers.join(", ")} become ${numbersSquared.join(", ")} when squared.`;
 
+// STRINGS - CHAPTER 11
+// string.trim() will remove all leading or trailing white space characters
+// string.startsWith("") returns T/F based on it's substring input
+// string.endsWith("") returns T/F the same way as string.startsWith("")
+// string.includes("") returns T/F for the substring ANYWHERE in the string
+// --------
+// string.split("separator") will split a string into an array of strings by separator
+// - - - exampleString = "Bread,Tomatoes,Milk,Eggs";
+// - - - const exampleArray = exampleString.split(",");
+// - - - console.log(exampleArray); // ["Bread", "Tomatoes", "Milk", "Eggs"]
+// The opposite of string.split("") is string.join("")
+// --------
+// string.replace(search, replace) will take the first instance of what is searched for and replace it
+// - - - const standardDate = "10/16/2023";
+// - - - standardDate.replace("/", "-");
+// - - - console.log(standardDate); //10-16/2023
+// If the goal is to replace ALL instances, use string.replaceAll(search, replace) instead
+// --------
+
+// APPLYING ARRAY FUNCTIONS
+// NOTICE: If join is not set to "", then it will default to "," 
+// because that is the map default
+const users = ["Jimmy M.", "Mickey M.", "Donald T.", "Bernie S."];
+const usersHTML = `<ul>
+${users.map(user => `<li>${user}</li>`).join("")}
+</ul>`;
+
+document.getElementById("arrayFuncParagraph").innerText = usersHTML;
+
+
 /* -------- Exercise Ideas --------
 - Cumulative/Running Average Algorithm 
 - 
+*/
+
+/* --- Notes to add to Website ---
+- Lambda functions and implicit return
+- A short reference of commonly used functions
 */
 
 /*
@@ -81,4 +116,10 @@ Array Functions:
 - map: take elements of one array and change them
 - includes: returns true or false
 - join: specify "glue" for printing to the DOM
+
+String Functions:
+- trim: remove leading/trailing whitespace chars
+- startsWith, endsWith, includes: returns T/F based on substring
+- split: opposite of the array join function; string -> array
+- replace(search, replace): swaps first instance with specified substr
 */
