@@ -204,8 +204,8 @@ p.commonParagraph {
 }
 
 .paragraphCenterText {
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     font-family: verdana;
     font-size: 20px;
     margin-top: 10px;

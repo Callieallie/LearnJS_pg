@@ -88,15 +88,56 @@ The numbers ${squaringNumbers.join(", ")} become ${numbersSquared.join(", ")} wh
 // If the goal is to replace ALL instances, use string.replaceAll(search, replace) instead
 // --------
 
-// APPLYING ARRAY FUNCTIONS
+// APPLYING ARRAY FUNCTIONS - CHAPTER 12
 // NOTICE: If join is not set to "", then it will default to "," 
 // because that is the map default
+// -- The forEach array function would not work because it returns "undefined"
 const users = ["Jimmy M.", "Mickey M.", "Donald T.", "Bernie S."];
 const usersHTML = `<ul>
 ${users.map(user => `<li>${user}</li>`).join("")}
 </ul>`;
 
 document.getElementById("arrayFuncParagraph").innerText = usersHTML;
+
+// Array.every(callback)
+// Will return T/F based on a condition's being met by EVERY item
+// Array.some(callback)
+// Will return T if at least one item in the array meets a condition and F if none do
+const someNumbers = [10, 82, 304, 26];
+const someOtherNumbers = [33, 1, 57, 13];
+
+const allEven = someNumbers.every(number => number % 2 === 0);
+const allOdd = someNumbers.every(number => number % 2 !== 0);
+const allEvenOther = someOtherNumbers.every(number => number % 2 === 0);
+const allOddOther = someOtherNumbers.every(number => number % 2 !== 0);
+
+document.getElementById("arrayEveryParagraph").innerText = `The array ${someNumbers.join(", ")} will return ${allEven} when every element is checked for being even and ${allOdd} when every element is checked for being odd.
+The array ${someOtherNumbers.join(", ")} will return ${allEvenOther} when every element is checked for being even and ${allOddOther} when every element is checked for being odd.`;
+
+// Array.splice(start[, deleteCount])
+// Not to be confused with another method "slice".
+// The weird syntax "[, deleteCount]" indicates that the deleteCount parameter is optional.
+// The splice method deletes items from the array beginning with the specified start index
+// ... and continues deleting for EITHER as many indicies are specified by the deleteCount
+// ... parameter OR until the end of the array.
+const initialFallThings = ["leaves", "pumpkins", "apples", "cider", "corn mazes", "ghosts"];
+const fallThings = ["leaves", "pumpkins", "apples", "cider", "corn mazes", "ghosts"];
+const splicedFallThings = fallThings.splice(2,2);
+
+document.getElementById("spliceDemoParagraphA").querySelector("span").style.fontWeight = "bold";
+document.getElementById("spliceDemoParagraphA").querySelector("span").innerText = initialFallThings.join(", ");
+
+document.getElementById("spliceDemoParagraphB").querySelector("span").style.fontWeight = "bold";
+document.getElementById("spliceDemoParagraphB").querySelector("span").innerText = fallThings.join(", ");
+
+document.getElementById("spliceDemoParagraphC").querySelector("span").style.fontWeight = "bold";
+document.getElementById("spliceDemoParagraphC").querySelector("span").innerText = splicedFallThings.join(", ");
+
+/*
+document.getElementById("spliceDemoParagraph").innerText = `The fallThings array has the following items before it is spliced: ${initialFallThings.join(", ")}
+After splicing from indicies 2 to 4, the fallThings array contains the following: ${fallThings.join(", ")}
+These items were deleted from the array: ${splicedFallThings}`;
+*/
 
 
 /* -------- Exercise Ideas --------
