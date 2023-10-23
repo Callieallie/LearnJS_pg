@@ -133,11 +133,42 @@ document.getElementById("spliceDemoParagraphB").querySelector("span").innerText 
 document.getElementById("spliceDemoParagraphC").querySelector("span").style.fontWeight = "bold";
 document.getElementById("spliceDemoParagraphC").querySelector("span").innerText = splicedFallThings.join(", ");
 
-/*
-document.getElementById("spliceDemoParagraph").innerText = `The fallThings array has the following items before it is spliced: ${initialFallThings.join(", ")}
-After splicing from indicies 2 to 4, the fallThings array contains the following: ${fallThings.join(", ")}
-These items were deleted from the array: ${splicedFallThings}`;
+// ARRAY REDUCE - CHAPTER 13
+// "The reduce method is used to calculate a single value from an array."
+// "We can reduce the array [5, 10, 5] to the number 20."
+// The most common use of the reduce method is to sum elements in an array.
+// The reduce method recieves a CALLBACK (the "reducer") which you code.
+// -----------------------------------
+// CRITICAL NOTE
+// LearnJS is using the term callback inappropriately.
+// The reducer function is technically just an anonymous function or a lambda.
+// A callback is an asynchronis code term that refers to the function returning
+// ... something immediantly and then calling the callback function later when
+// ... more information is known.
+// -----------------------------------
+/* ARRAY REDUCE:SUM
+const grades = [10, 15, 5];
+const sum = grades.reduce((total, current) => {
+    return total + current;
+}, 0);
 */
+// NOTE: The reduce method takes in 2 parameters here: the reducer, the initial value
+/* THE REDUCER
+(total, current) => {
+    return total + current;
+}
+*/
+// THE REDUCER FUNCTION - passed into the reduce function - 2 parameters
+// The reducer is always called on EVERY item in the array.
+// total (or "accumulator"): the last computed value by the reduce function
+// current: a single item in the array at the current index
+// ---
+// THE REDUCE FUNCTION - 2 parameters
+// reducer: the function which "reduces" the code
+// initialValue: the value given to the total/accumulator the first itteration through
+// ... the reducer function
+
+
 
 
 /* -------- Exercise Ideas --------
@@ -147,6 +178,7 @@ These items were deleted from the array: ${splicedFallThings}`;
 
 /* --- Notes to add to Website ---
 - Lambda functions and implicit return
+- Callbacks vs anonymous functions
 - A short reference of commonly used functions
 */
 
