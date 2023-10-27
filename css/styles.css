@@ -91,6 +91,7 @@ code {
 }
 
 /*Code Example Classes*/
+/*This class name is semantically proper*/
 .elementCodeExample {
     color: rgb(17, 0, 255);
 }
@@ -106,6 +107,8 @@ hr {
     width: 600px;
 }
 
+/*the name "fancy" for this class is probably not the best
+as it is quite generic and describes it's style rather than its' functionality.*/
 hr.fancy {
     background-image: url(/images/dividers/divider4.png);
     background-repeat: no-repeat;
@@ -116,6 +119,8 @@ hr.fancy {
 }
 
 /*IDs*/
+/*The following ID names seem semantically correct as they are describing the
+HTML functionality of each divider.*/
 #outerDivider {
     display: flex;
     flex-direction: row;
@@ -131,6 +136,8 @@ hr.fancy {
 }
 
 /* Classes */
+/*The class names "row" and "column" seem more descriptive of the CSS styling than of
+the HTML functionality. These should probably be renamed.*/
 .row {
     display: flex;
     justify-content: center;
@@ -140,6 +147,8 @@ hr.fancy {
     flex-basis: 40%;
 }
 
+/*The names "topNavigation" and "dropdown" are content-agnostic.
+While they do describe the HTML functionality, they are widely reuseable.*/
 .topNavigation {
     display: flex;
     justify-content: center;
@@ -176,7 +185,8 @@ hr.fancy {
 }
 
 /* -------- IMAGES -------- */
-
+/*The class names "displayCenter" and "divider" are highly descriptive of the CSS styling.
+Both of these class names should be changed to be more descriptive of the HTML functionality.*/
 img.displayCenter{
     display: block;
     margin-left: auto;
@@ -195,7 +205,8 @@ img.divider {
 }
 
 /* -------- PARAGRAPHS -------- */
-
+/*The class names "commonParagraph" and "paragraphCenterText" are too vague.
+Try something more like "body-paragraph" or "indtroductory-paragraph" instead.*/
 p.commonParagraph {
     font-family: verdana;
     font-size: 20px;
@@ -216,6 +227,8 @@ p.commonParagraph {
 use .innerHTML to insert <b> tags and such because .innerHTML is vulnerable to being 
 "JavaScript Injection". Someone could change the DOM and run unwanted HTML scripts.
 This could lead to security issues when handling sensitive information.*/
+/*THIS CLASS NAME IS FAR TOO DESCRIPTIVE OF CSS STYLING.*/
+/*Change the class name or delete this class altogether.*/
 .boldParagraph {
     font-weight: bold;
     display: flex;
@@ -231,6 +244,8 @@ This could lead to security issues when handling sensitive information.*/
 
 /*List Styles*/
 /*Lists default to listing with numbers.*/
+/*While these class names are descriptive of CSS styling rather than of HTML content,
+it makes enough sense to leave them as they are because the reusability is good.*/
 .listRomanNumerals {
     list-style-type: upper-roman;
 }

@@ -189,8 +189,13 @@
             - 
 
     --------------------------------------
-    --- HTML Attributes
-    - key="value"
+    --- HTML Attributes (key="value")
+    - id: used to specify an element uniquely (id selector: #)
+        - written in lowercase separated by "-" character
+    - class: "used to identify a repeatable element or behavior" (class selector: )
+        - written the same way as id
+        - "use class names that describe the nature of the content"
+        - Good: "welcoming-statement"; Bad: "red-text"
     - 
 
     --------------------------------------
@@ -248,5 +253,30 @@
     - PADDING: Adds space between the element's content and it's border
     - BORDER: Inluded in the element's width and height
     - MARGIN: Adds space around the outside of an element
+    ---
+    INLINE BOX MODEL
+    - width and height cannot be changed
+    - padding can be changed (top and bottom will not push other elements away)
+        - might be used for highlighting text
+    - border can be applied (also will not push away vertically)
+    - margin can be applied (again, only will create space horizontally)
     - 
+-->
+
+<!--
+    ----------Separation of Concerns Article----------
+    https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
+    What is it?
+    "The idea is that your HTML should only contain information about your content,
+    and all of your styling decisions should be made in your CSS."
+    - If you keep your HTML reserved for content and your CSS reserved for styling,
+    then you can easily redesign any page by simply swapping CSS stylesheets.
+    TWO WAYS TO WRITE HTML AND CSS:
+    1. CSS which is dependant on HTML (generally reccomended)
+        - HTML is restylable; CSS is not reusable
+    2. HTML which is dependant on CSS (sometimes useful)
+        - CSS is reuseable; HTML is not restylable
+    Ask yourself: Is it more important for my webpage to have restylable HTML or
+    reuseable CSS?
+
 -->
