@@ -135,6 +135,8 @@
         <p>
             Author: Callieallie Wayne
         </p>
+        <address>callieacts@gmail.com</address>
+        <address>(434) 907-9714</address>
     </footer>
     
     <script src="/scripts/examples/practice.js"></script>
@@ -150,9 +152,12 @@
     h3-h6: Each heading-type represents a further subsection of it's predecessor
     ***Think of headers like you would the alphanumeric outline system in paper drafting
     ***Roman Numerals, Capitalized Letters, Arabic Numerals (1-9), and Lowercase Letters
+    title: used to title browser tabs
     br: used to add a newline/carriage-return. NOT FOR SEPERATING PARAGRAPHS (or elements)!
             - The br element should be reserved for poems and addresses.
             - DO NOT use the br element to format a paragraph
+    hr: used to "represent a thematic break between multiple paragraphs."
+            - DO NOT use the hr element to display a border. Use CSS for that.
     ---
     LANDMARK ELEMENTS
     main: Represents the dominant content of the page
@@ -183,19 +188,50 @@
                 - Providing an alternate text makes the page more accessable and better for SEO
     ---
     OTHER
+    NOTE - Use elements semantically! DO NOT use an element for its styling!
     link: used to link an HTML file to another file (often CSS)
             - rel or "relationship" attribute is used to define the relationship between the two files
             - href or "hypertext reference" points to the file which will be linked
-            - 
+    address: used to represent contact information
+            - appropriate for email address, physical address, and social media links
+    time: "used to represent dates, times, time-zone offsets, and durations"
+            - be sure to use machine-readable formatting for all times
+            datetime: an attribute of time used to ensure the time is machine-readable
+    small: "used to represent side-comments and small print text such as copyrights, attributions, and other forms of short legal/tax texts."
+            - Common uses include taxes, short legal notices, and attributions
+    mark: "used to represent text that is highlighted/marked due to relevance to [...] the page."
+            - In a keyword search, mark should be used on all matching instances.
+    sub: "used to represent text displayed as a subscript."
+            - i.e.) Chemistry atomic subscript or footnote numbers in an article
+    sup: "used to represent text displayed as superscript."
+            - i.e.) Mathematical exponents and ordinal numbers
+    var: "used to represent a variable."
+            - Often used for programming languages and math
+    blockquote: "used to represent text quoted from another source."
+            - Use the blockquote "cite" attribute to cite the quote's source
+    q: used to represent inline quotations
+            - The browser will automatically insert quotation marks
+            - Also supports the cite attribute
+    cite: "used to represent the title of a work."
+            - Should not be used for a person's name
+    
 
     --------------------------------------
     --- HTML Attributes (key="value")
     - id: used to specify an element uniquely (id selector: #)
         - written in lowercase separated by "-" character
-    - class: "used to identify a repeatable element or behavior" (class selector: )
+    - class: "used to identify a repeatable element or behavior" (class selector: ".")
         - written the same way as id
         - "use class names that describe the nature of the content"
         - Good: "welcoming-statement"; Bad: "red-text"
+        - To use multiple classes, separate class names with a space:
+            - class="ingredient protien"
+            - In the above example, "ingredient" and "protien" are seperate classes
+    --- CSS SELECTORS
+    Specificity
+    - least specific to most specific: type selector, class selector, id selector
+    - order of code only matters in terms of specificity when there are DUPLICATE selectors
+    - it is generally best to avoid compound selectors (ie. #identification.class)
     - 
 
     --------------------------------------
@@ -223,6 +259,10 @@
     - Boilerplate: "!"+tab will create a basic HTML template
     - COMMENTS: Ctrl+"/" will create a new html comment
     - Validating HTML: validator.w3.org
+    - The CSS direction property can accomidate different languages by adjusting reading/writting
+    ... from left-to-right to right-to-left
+        - There is also ther property, writing-mode, which can change writing from horizontal to vertical
+    - 
 -->
 
 
@@ -253,6 +293,7 @@
     - PADDING: Adds space between the element's content and it's border
     - BORDER: Inluded in the element's width and height
     - MARGIN: Adds space around the outside of an element
+        - NOTE: Only adjacent vertical margins collapse
     ---
     INLINE BOX MODEL
     - width and height cannot be changed
@@ -260,7 +301,46 @@
         - might be used for highlighting text
     - border can be applied (also will not push away vertically)
     - margin can be applied (again, only will create space horizontally)
-    - 
+    ---
+    PADDING AND MARGIN SHORTHANDS
+    - setting "padding" or "margin" to 20px will automatically set 4 values to 20px
+        - padding-top, padding-right, padding-bottom, and padding-left
+        - margin-top, margin-right, margin-bottom, and margin-left
+    - using emmet, these value names can be shortened further:
+        - pt20 = "padding-top: 25px"
+        - pt, pr, pb, pl, and p would be the abbreviation for the general "padding"
+    - it is also possible to set the 4 different padding or margin values this way:
+        - padding: 10px 15px 5px 20px
+        - each value from left to right sets pt, pr, pb, and pl
+        - remember this as "clockwise from the top"
+    - if you only specify two values, you will set the vertical and horizontal padding or margin
+        - padding: 10px 20px
+        - This sets pt and pb to 10px and pr and pl to 20px
+    ---
+    PADDING AND MARGIN ORIENTATION - LOCALIZATION
+    - If the code is written for languages that are not left-to-right, top-to-bottom
+    ... use the following properties to adjust padding and margin:
+        - padding-inline-start OR padding-inline-end: horizontal padding
+        - padding-block-start OR padding-block-end: vertical padding
+    ---
+    CSS BORDER PROPERTIES
+    - border: used as a shorthand to specify these properties in order:
+            1. border-width
+            2. border-style
+            3. border-color
+            - i.e.) border: 5px dashed orange;
+    - border-style: solid (most common), dashed, dotted, double, none
+            - border-style is a shorthand for the following:
+                - border-top-style
+                - border-right-style
+                - border-bottom-style
+                - border-left-style
+    - border-color: also a shorthand in the same way as border-style
+            - Just like with padding/margin, all 4 border sides can be set in one line.
+            - border-color: red, yellow, blue, green
+            - Always start with the top and move clockwise
+    - border-width: set the same way as border-style and border-color
+    ---
 -->
 
 <!--
