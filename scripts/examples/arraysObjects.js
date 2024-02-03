@@ -168,7 +168,30 @@ const sum = grades.reduce((total, current) => {
 // initialValue: the value given to the total/accumulator the first itteration through
 // ... the reducer function
 
+// ARRAY DESTRUCTURING - CHAPTER 14
+// "... it makes your code easier to read."
+// NOTE: This is NOT the same as a deconstructor in C++
+//          - The word here is "destructure". It is a different concept.
 
+/* WITHOUT ARRAY DESTRUCTURING
+const dimensions = [20, 5];
+const width = dimensions[0];
+const height = dimensions[1];
+ */
+
+/* USING ARRAY DESTRUCTURING (same end result)
+const dimensions = [20, 5];
+const [width, height] = dimensions;
+*/
+
+// ARRAY CONCATENATION
+// To concatenate two or more arrays into a new one, use "..."
+/* An Example of Array Concatenation
+const cat1 = [Tubbs];
+const cat2 = [Rilla];
+const our_cats = [...Tubbs, ...Rilla];
+console.log(our_cats); // [Tubbs, Rilla]
+*/
 
 
 /* -------- Exercise Ideas --------
